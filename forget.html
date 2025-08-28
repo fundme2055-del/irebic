@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password</title>
+    <script src="./tailwind.js"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+ 
+  <div class="w-full max-w-5xl bg-white shadow-lg rounded-lg flex relative overflow-hidden">
+    
+   
+    
+    <div class=" hidden md:block md:w-1/2 bg-gray-100 items-center justify-center p-10">
+      <img src="./img/forget img.png" alt="Confused person" class="max-h-[400px] object-contain">
+    </div>
+
+    
+    <div class=" md:w-1/2 flex flex-col justify-center p-10 text-center">
+      <h2 class="text-2xl font-bold mb-2">Reset password</h2>
+      <p class="text-sm text-gray-600 mb-6">
+        Kindly enter your e-mail to get back into your account.
+      </p>
+
+      <form class="space-y-4">
+        <input 
+          type="email" required
+          placeholder="E-mail" 
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+        <button 
+          type="submit"
+          class="bg-red-500 text-white w-full py-2 rounded hover:bg-red-600">
+          Continue
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+</html>
