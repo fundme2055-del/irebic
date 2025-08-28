@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Information</title>
+    <title>welcome </title>
     <script src="./tailwind.js"></script>
-
 </head>
-<body class="bg-gray-50 font-sans">
 
-  <div class="min-h-screen flex flex-col">
-    
-    <!-- Top Logo Section -->
-    <header class="p-6">
-      <h1 class="text-2xl font-bold text-red-600">iRebic</h1>
-      <p class="text-sm text-gray-700">Vendor Center</p>
-    </header>
-     <aside class="w-full md:w-1/4  bg-white border-l p-20 m-20">
-        <h2 class="text-gray-900 font-semibold mb-4">Set up your account</h2>
-        <ul class="space-y-4">
-          <li class="text-red-500 font-medium border-r-2 border-red-500 pl-2">Personal Information</li>
-          <li class="text-gray-700 hover:text-red-500">Shop Information</li>
-          <li class="text-gray-700 hover:text-red-500">Shipping Details</li>
-          <li class="text-gray-700 hover:text-red-500">Payment Information</li>
-        </ul>
-      </aside>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
 
-    <!-- Content Area -->
-    <div class="flex flex-col md:flex-row flex-1 p-6 gap-8">
-      
-      <!-- Main Content -->
-      <main class="flex-1 bg-white shadow rounded-lg p-6">
-        <!-- Header -->
-        <div class="mb-8">
-          <h2 class="text-2xl font-semibold text-gray-800">Welcome to iRebic Vendor Center</h2>
-          <p class="text-gray-500 text-sm">Let’s set up your account so you can proceed to start selling</p>
-        </div>
-
-        <!-- Avatar + Button -->
-        <div class="flex flex-col md:flex-row items-center md:items-start gap-6 mb-6">
-          <img src="avatar.jpg" alt="Avatar" class="w-28 h-28 rounded-full object-cover border">
-          <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
-            Update Avatar
-          </button>
-        </div>
-
-        <!-- Personal Info -->
-        <form class="space-y-4">
-          <div>
-            <label class="block text-gray-700 font-medium">First Name</label>
-            <input type="text" value="Adebayo Christianah"
-                   class="w-full border rounded px-3 py-2 mt-1 focus:ring focus:ring-red-200 focus:border-red-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium">Last Name</label>
-            <input type="text" value="Adebayo Christianah"
-                   class="w-full border rounded px-3 py-2 mt-1 focus:ring focus:ring-red-200 focus:border-red-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium">Email</label>
-            <input type="email" value="adebayochris56@gmail.com"
-                   class="w-full border rounded px-3 py-2 mt-1 focus:ring focus:ring-red-200 focus:border-red-500">
-          </div>
-          <div>
-            <label class="block text-gray-700 font-medium">Phone Number</label>
-            <input type="text" value="+234 906 0989 478"
-                   class="w-full border rounded px-3 py-2 mt-1 focus:ring focus:ring-red-200 focus:border-red-500">
-          </div>
-
-          <!-- Save Button -->
-          <button type="submit" 
-                  class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">
-            Save Information
-          </button>
-        </form>
-      </main>
-
-      <!-- Sidebar on the RIGHT -->
-     
+    <div class="absolute top-6 left-25 right-4 ">
+        <img src="./img/Frame 1618868773.png" alt="logo" class="h-14 w-1/12">
     </div>
-  </div>
+
+    <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-3xl  w-full md:flex">
+
+        <div class="  flex-row  justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-9 justify--center">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+
+        </div>
+        <div class="p-8 md:w-1/2">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Welcome on board</h2>
+            <p class="text-sm text-gray-500 mb-8">Your information is secured</p>
+
+            <form class="space-y-5">
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-1">E‑mail</label>
+                    <input id="email" type="email" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md "
+                        placeholder="you@example.com" />
+                </div>
+                <div>
+                    <label for="storename" class="block text-gray-700 font-medium mb-1">Store Name</label>
+                    <input id="storename" type="text" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md " placeholder="Your Shop" />
+                </div>
+                <div>
+                    <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                    <input id="phone" type="tel" required class="w-full px-4 py-2 border border-gray-300 rounded-md "
+                        placeholder="+234 800 000 0000" />
+                </div>
+                <button type="submit"
+                    class="w-full bg-red-500 text-white font-semibold py-2 rounded-md hover:bg-red-700 transition-colors">
+                    Create account
+                </button>
+            </form>
+
+            <p class="mt-6 text-sm text-center text-gray-600">
+                Already have account?
+                <a href="./info.html" class="text-indigo-600 hover:underline">Log in</a>
+            </p>
+            <p class="mt-2 text-sm text-center text-indigo-600 hover:underline cursor-pointer">
+                Switch to Dropshipper account
+            </p>
+        </div>
 
 
-
-
+        <div class="  hidden md:block md:w-1/2 bg-gray-50  ">
+            <img src="./img/Clip path.png" alt="img"
+                class="object-cover h- w-auto justify-center flex  items-center " />
+        </div>
+    </div>
 
 </body>
-</html>
+
+</html
